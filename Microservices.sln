@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3E1EE3D-656E-4FE1-ACE3-C7388B6A2E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformService", "src\PlatformService\PlatformService.csproj", "{83A86546-B675-41AA-9F6C-2BC93A15D527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A86546-B675-41AA-9F6C-2BC93A15D527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A86546-B675-41AA-9F6C-2BC93A15D527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A86546-B675-41AA-9F6C-2BC93A15D527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A86546-B675-41AA-9F6C-2BC93A15D527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83A86546-B675-41AA-9F6C-2BC93A15D527} = {B3E1EE3D-656E-4FE1-ACE3-C7388B6A2E03}
+	EndGlobalSection
+EndGlobal
