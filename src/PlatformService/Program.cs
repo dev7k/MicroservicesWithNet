@@ -43,6 +43,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-PreparationDb.PreparePopulation(app);
+PreparationDb.PreparePopulation(app, app.Environment.IsProduction());
 
 app.Run();
