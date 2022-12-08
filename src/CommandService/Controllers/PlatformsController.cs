@@ -26,7 +26,7 @@ namespace CommandService.Controllers
             var platformItems = _repository.GetAllPlatforms();
 
             return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platformItems));
-        }        
+        }
 
         [HttpPost]
         public ActionResult TestInboundConnection()
