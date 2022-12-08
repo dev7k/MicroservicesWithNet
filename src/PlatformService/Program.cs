@@ -16,7 +16,7 @@ if (builder.Environment.IsProduction())
 else if (builder.Environment.IsDevelopment())
 {
     Console.WriteLine("--> Using InMemory Database");
-    builder.Services.AddDbContext<AppDbContext>(opt => 
+    builder.Services.AddDbContext<AppDbContext>(opt =>
         opt.UseInMemoryDatabase("InMemory"));
 }
 

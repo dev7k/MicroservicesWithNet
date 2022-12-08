@@ -35,7 +35,7 @@ namespace PlatformService.AsyncDataServices
             catch (Exception exception)
             {
                 Console.WriteLine($"--> Could not connect to the MessageBus: {exception.Message}");
-            }        
+            }
         }
 
 
@@ -51,7 +51,7 @@ namespace PlatformService.AsyncDataServices
             else
             {
                 Console.WriteLine("--> RabbitMQ connection is closed, not sending");
-            }   
+            }
         }
 
         private void SendMessage(string message)

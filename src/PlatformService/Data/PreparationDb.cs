@@ -18,10 +18,10 @@ namespace PlatformService.Data
             if (IsProduction)
             {
                 Console.WriteLine("--> Attempting to apply migrations...");
-                
+
                 try
                 {
-                    context.Database.Migrate();    
+                    context.Database.Migrate();
                 }
                 catch (Exception exception)
                 {
@@ -47,5 +47,5 @@ namespace PlatformService.Data
                 Console.WriteLine("--> We already have data");
             }
         }
-    }   
+    }
 }

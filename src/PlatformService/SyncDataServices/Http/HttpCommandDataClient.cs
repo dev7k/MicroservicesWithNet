@@ -5,12 +5,12 @@ using PlatformService.Dtos;
 namespace PlatformService.SyncDataServices.Http
 {
     public class HttpCommandDataClient : ICommandDataClient
-    { 
+    {
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
 
         public HttpCommandDataClient(
-            HttpClient httpClient, 
+            HttpClient httpClient,
             IConfiguration configuration)
         {
             _httpClient = httpClient;
@@ -23,7 +23,7 @@ namespace PlatformService.SyncDataServices.Http
                 JsonSerializer.Serialize(platform),
                 Encoding.UTF8,
                 "application/json");
-            
+
             var response = await _httpClient.PostAsync($"{_configuration["CommandService"]}", httpContent);
 
             if(response.IsSuccessStatusCode)

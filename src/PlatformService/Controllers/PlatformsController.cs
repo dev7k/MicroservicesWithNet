@@ -83,7 +83,7 @@ namespace PlatformService.Controllers
                 Console.WriteLine($"--> Could not send asynchronously: {exception.Message}");
             }
 
-            return CreatedAtRoute(nameof(GetPlatformById), new {Id = platformReadDto.Id}, platformReadDto);            
+            return CreatedAtRoute(nameof(GetPlatformById), new {Id = platformReadDto.Id}, platformReadDto);
         }
     }
 }
